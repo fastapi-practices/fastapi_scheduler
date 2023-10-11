@@ -1,0 +1,20 @@
+[project]
+name = "fastapi-scheduler"
+version = "0.0.1"
+description = "Basic fastapi + apscheduler's scheduled task platform"
+authors = [
+    {name = "Wu Clan", email = "jianhengwu0407@gmail.com"},
+]
+dependencies = [
+    "apscheduler>=4.0.0a3",
+    "fastapi>=0.103.0",
+    "uvicorn>=0.23.2",
+    "redis>=5.0.1",
+    "pydantic-settings>=2.0.3",
+    "loguru>=0.7.2",
+    "asgiref>=3.7.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
