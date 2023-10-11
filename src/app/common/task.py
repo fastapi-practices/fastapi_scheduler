@@ -22,7 +22,7 @@ async def async_scheduler_start():
         log.error(f'❌ 任务 scheduler 启动失败: {e}')
 
 
-async def async_scheduler_shutdown(wait: bool = True):
+async def async_scheduler_shutdown(wait: bool = False):
     try:
         async with async_scheduler as scheduler:
             if not wait:
