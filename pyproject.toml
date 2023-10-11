@@ -13,8 +13,8 @@ dependencies = [
     "pydantic-settings>=2.0.3",
     "loguru>=0.7.2",
     "asgiref>=3.7.2",
+    "pre-commit>=3.4.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
-

@@ -7,9 +7,11 @@ from app.common.log import log
 from app.common.redis import redis_client
 
 # 调度器
-async_scheduler = AsyncScheduler(**{
-    'event_broker': RedisEventBroker(client=redis_client),
-})
+async_scheduler = AsyncScheduler(
+    **{
+        'event_broker': RedisEventBroker(client=redis_client),
+    }
+)
 
 
 async def async_scheduler_start():

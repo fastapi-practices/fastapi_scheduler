@@ -7,4 +7,3 @@ BasePath = Path(__file__).resolve().parent.parent.parent
 
 # 日志文件路径
 LogPath = os.path.join(BasePath, 'app', 'log')
-
