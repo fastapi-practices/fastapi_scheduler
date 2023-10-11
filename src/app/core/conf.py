@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     API_V1_STR: str = '/api/v1'
     TITLE: str = 'FastAPI'
     VERSION: str = '0.0.1'
-    DESCRIPTION: str = 'FastAPI Best Architecture'
+    DESCRIPTION: str = 'FastAPI APScheduler'
     DOCS_URL: str | None = f'{API_V1_STR}/docs'
     REDOCS_URL: str | None = f'{API_V1_STR}/redocs'
     OPENAPI_URL: str | None = f'{API_V1_STR}/openapi'
