@@ -1,7 +1,7 @@
 [project]
 name = "fastapi-scheduler"
 version = "0.0.1"
-description = "Basic fastapi + apscheduler's scheduled task platform"
+description = "Task scheduling system based on FastAPI with APScheduler 4.0"
 authors = [
     {name = "Wu Clan", email = "jianhengwu0407@gmail.com"},
 ]
