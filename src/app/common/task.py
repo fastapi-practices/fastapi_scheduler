@@ -1,5 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import sys
+
 from apscheduler import AsyncScheduler
 from apscheduler.eventbrokers.redis import RedisEventBroker
 
@@ -20,6 +22,7 @@ async def async_scheduler_start():
             await scheduler.start_in_background()
     except Exception as e:
         log.error(f'❌ 任务 scheduler 启动失败: {e}')
+        sys.exit()
 
 
 async def async_scheduler_shutdown(wait: bool = False):
