@@ -8,19 +8,19 @@ from fastapi import FastAPI
 from app.api.routers import v1
 from app.common.log import log
 from app.common.redis import redis_client
-from app.common.task import async_scheduler_start, async_scheduler_shutdown
+from app.common.task import scheduler
 from app.core.conf import settings
 
 
 @asynccontextmanager
 async def startup_init(app: FastAPI):
     await redis_client.aopen()
-    await async_scheduler_start()
+    scheduler.start()
 
     yield
 
     await redis_client.aclose()
-    await async_scheduler_shutdown()
+    scheduler.shutdown()
 
 
 app = FastAPI(

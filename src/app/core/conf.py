@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     # Env Config
     ENVIRONMENT: Literal['dev', 'pro']
 
-    # env redis
+    # Env redis
     REDIS_HOST: str
     REDIS_PORT: int
     REDIS_PASSWORD: str
@@ -39,8 +39,20 @@ class Settings(BaseSettings):
     UVICORN_PORT: int = 8000
     UVICORN_RELOAD: bool = True
 
-    # redis
+    # DateTime
+    DATETIME_TIMEZONE: str = 'Asia/Shanghai'
+    DATETIME_FORMAT: str = '%Y-%m-%d %H:%M:%S'
+
+    # Redis
     REDIS_TIMEOUT: int = 10
+
+    # APScheduler
+    APS_COALESCE: bool = False
+    APS_MAX_INSTANCES: int = 3
+    APS_MISFIRE_GRACE_TIME: int = 60
+
+    # Task
+    TASK_FILE: str = 'tasks.py'
 
 
 @lru_cache
