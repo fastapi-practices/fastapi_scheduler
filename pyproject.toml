@@ -18,3 +18,17 @@ dependencies = [
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+cache-dir = "./.ruff_cache"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.isort]
+lines-between-types = 1
+
+[tool.ruff.format]
+quote-style = "single"

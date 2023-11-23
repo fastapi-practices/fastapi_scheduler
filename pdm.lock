@@ -35,19 +35,19 @@ files = [
 
 [[package]]
 name = "apscheduler"
-version = "4.0.0a3"
+version = "4.0.0a4"
 requires_python = ">=3.8"
 summary = "In-process task scheduler with Cron-like capabilities"
 dependencies = [
-    "anyio~=4.0.0",
+    "anyio~=4.0",
     "attrs>=21.3",
     "tenacity~=8.0",
     "typing-extensions>=4.0; python_version < \"3.11\"",
     "tzlocal>=3.0",
 ]
 files = [
-    {file = "APScheduler-4.0.0a3-py3-none-any.whl", hash = "sha256:e20b07efefb765a7c1d2c8cc91eb2258f3c125a0ea2a39392fed88588173e3ab"},
-    {file = "APScheduler-4.0.0a3.tar.gz", hash = "sha256:7fecc2fd6d9d39da4fa7c94bf3e715b40cc0a158fda0de51cd5dd4e957307f86"},
+    {file = "APScheduler-4.0.0a4-py3-none-any.whl", hash = "sha256:29576119a82a4e91fbd20971d9225c88b073b8e23a7e6bda5f9d555fa8bcccfc"},
+    {file = "APScheduler-4.0.0a4.tar.gz", hash = "sha256:c349f281ec505235e1a748b0954d1ab868acefab69815559d62e025686945e65"},
 ]
 
 [[package]]

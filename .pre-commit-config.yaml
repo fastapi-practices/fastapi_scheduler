@@ -7,20 +7,13 @@ repos:
       - id: check-toml
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.0.292
+    rev: v0.1.6
     hooks:
       - id: ruff
         args:
           - '--fix'
-
-  - repo: https://github.com/psf/black
-    rev: 23.9.1
-    hooks:
-      - id: black
-        args:
-          - '--skip-string-normalization'
-          - '--line-length'
-          - '120'
+          - '--unsafe-fixes'
+      - id: ruff-format
 
   - repo: https://github.com/pdm-project/pdm
     rev: 2.9.3

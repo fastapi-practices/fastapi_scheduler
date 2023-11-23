@@ -3,12 +3,13 @@
 from contextlib import asynccontextmanager
 
 import uvicorn
+
 from fastapi import FastAPI
 
 from app.api.routers import v1
 from app.common.log import log
 from app.common.redis import redis_client
-from app.common.task import async_scheduler_start, async_scheduler_shutdown
+from app.common.task import async_scheduler_shutdown, async_scheduler_start
 from app.core.conf import settings
 
 
